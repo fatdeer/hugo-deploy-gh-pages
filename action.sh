@@ -36,7 +36,8 @@ else
 fi
 
 echo "Downloading Hugo: ${HUGO_VERSION}${EXTENDED_INFO}"
-URL=https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_${EXTENDED_URL}${HUGO_VERSION}_Linux-64bit.deb
+#URL=https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_${EXTENDED_URL}${HUGO_VERSION}_Linux-64bit.deb
+URL=https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.deb
 echo "Using '${URL}' to download Hugo"
 curl -sSL "${URL}" > /tmp/hugo.deb && dpkg --force architecture -i /tmp/hugo.deb
 
